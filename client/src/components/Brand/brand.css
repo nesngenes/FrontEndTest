@@ -1,0 +1,82 @@
+.brands {
+    display: flex;
+    justify-content: center;
+}
+
+.brand {
+    margin: 50px;
+}
+
+.consultation {
+    padding: 40px;
+    background-color: var(--yellow-alba);
+    margin-bottom: 100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consultation-small-heading {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.consultation-large-heading {
+    margin-top: 2px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.consultation-button {
+    border: 1px solid black;
+    background: none;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 680px) {
+    .brands {
+        flex-wrap: wrap;
+    }
+    .brand {
+        margin: 0;
+    }
+
+    .consultation {
+        padding: 0;
+        background-color: transparent;
+        margin: 0;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation-small-heading {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    
+    .consultation-large-heading {
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    
+    .consultation-button {
+        border: none;
+        border: 1px solid black;
+        background-color: var(--yellow-alba);
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 25px;
+        margin-bottom: 50px;
+    }
+    
+}

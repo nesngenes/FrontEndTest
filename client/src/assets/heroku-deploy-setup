@@ -1,0 +1,19 @@
+1. remove all node_modules, packagelock.json and build folder / files
+2. set client proxy and axios and port to heroku url
+3. cd client and npm install --save --legacy-peer-deps
+4. npm run build
+5. back to root
+6. npm install
+7. set env variable to heroku 
+8. heroku login etcetc .. 
+
+
+
+SET HEROKU ENV TO 
+
+NPM_CONFIG_LEGACY_PEER_DEPS
+
+
+true
+
+

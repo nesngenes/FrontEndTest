@@ -1,0 +1,122 @@
+.landing-page {
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.heading-text {
+    position: absolute;
+}
+
+.sub-title-3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 40px 20px;
+}
+
+.sub-title-2 {
+    font-size: 4rem;
+}
+
+.title {
+    font-size: 5rem;
+    background-color: var(--white);
+    padding: 4px;
+}
+
+.yellow-line {
+    width: 75px;
+    height: 5px;
+    background-color: var(--yellow-alba);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.squareDots {
+    background-image: url(../../assets/squareDots.svg);
+    width: 81px;
+    height: 66px;
+    position: absolute;
+    top: 12vw;
+    left: 37.8vw;
+    z-index: -1;
+}
+
+.rectDots {
+    background-image: url(../../assets/rectDots.svg);
+    width: 369px;
+    height: 66px;
+    background-position: top right;
+    position: absolute;
+    top: 41.5vw;
+    left: 60vw;
+    z-index: -1;
+}
+
+.working-image {
+    background-image: url(../../assets/working.svg);
+    width:1127px;
+    height: 765px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 680px) {
+    .landing-page {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .heading-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sub-title-3 {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .sub-title-2 {
+        font-size: 2rem;
+        background-color: white;
+    }    
+
+    .title {
+        font-size: 2rem;
+        background-color: var(--white);
+    }
+
+    .rectDots, .squareDots {
+        display: none;
+    }
+    
+    .working-image {
+        background-image: url(../../assets/working.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+        background-blend-mode: multiply;
+        background-color: #96c3cf;
+    }
+    
+}
+
+
+
+

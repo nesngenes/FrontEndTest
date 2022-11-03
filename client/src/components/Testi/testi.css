@@ -1,0 +1,170 @@
+.testimonials-grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial {
+    margin: 0;
+    padding: 0;
+}
+
+
+.testimonial:first-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testi-quotes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+}
+
+.testimonial:nth-child(4){
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.testimonial:nth-child(4) .testiHead, .testimonial:nth-child(4) .testi-quotes {
+    font-size: 2rem;
+    line-height: 1;
+} 
+
+.testimonial:first-child .testiHead, .testimonial:first-child .testi-quotes {
+    font-size: 2rem;
+} 
+
+.testimonial:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding-left: 25%;
+}
+
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.userProfile img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.userProfileInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userProfileInfo p {
+    margin: 0;
+    line-height: 2rem;
+}
+
+.testi-job {
+    color: var(--grey);
+}
+
+.petikBawah {
+    background-image: url(../../assets/petikbawah.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 205vw;
+    left: 80vw;
+    z-index: -1;
+}
+
+.petikAtas {
+    background-image: url(../../assets/petikatas.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 174vw;
+    left: 3vw;
+    z-index: -1;
+}
+
+.dots24 {
+    background-image: url(../../assets/dots24.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 184.5vw;
+    left: 43vw;
+    z-index: -1;
+}
+
+.dots25 {
+    background-image: url(../../assets/dots25.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 205vw;
+    left: 0vw;
+    z-index: -1;
+}
+
+@media screen and (max-width: 680px) {  
+    .headlines {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+
+    .testimonials-grid {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial:nth-child(4) .testiHead, .testimonial:nth-child(4) .testi-quotes {
+        font-size: 1.2rem;
+        line-height: 1;
+    } 
+    
+    .testimonial:first-child .testiHead, .testimonial:first-child .testi-quotes {
+        font-size: 1.2rem;
+    } 
+
+    .userProfile img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .userProfileInfo p {
+        margin: 0;
+        line-height: 1rem;
+    }
+    
+    .petikBawah {
+        display: none;
+    }
+    
+    .petikAtas {
+        display: none;
+
+    }
+    
+    .dots24 {
+        display: none;
+    }
+    
+    .dots25 {
+        display: none;
+    }   
+}

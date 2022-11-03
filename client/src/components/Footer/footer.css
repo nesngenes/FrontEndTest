@@ -1,0 +1,67 @@
+.footer {
+    display: flex;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer-content {
+    width: 30%;
+    line-height: 2rem;
+}
+
+
+.footer-website {
+    padding-left: 100px;
+}
+
+.social {
+    display: flex;
+}
+
+.social img {
+    margin-top: 12px;
+    margin-right: 12px; 
+}
+
+.footer-alba-info {
+    margin: 30px 0;
+}
+
+.trademark-allrights {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--grey);
+        border-bottom: 1px solid var(--grey);
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-alba-info {
+        margin: 0;
+    }
+    
+    .footer-content {
+        width: 100%;
+        line-height: 1rem;
+        text-align: center;
+    }
+    
+    .footer-website {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+}

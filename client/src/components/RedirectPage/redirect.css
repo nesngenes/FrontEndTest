@@ -1,0 +1,22 @@
+.profile {
+    padding-top: 100px;
+}
+
+.datas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}

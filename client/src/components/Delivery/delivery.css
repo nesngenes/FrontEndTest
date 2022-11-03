@@ -1,0 +1,35 @@
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.service {
+    margin: 20px 0;
+    width: 31%;
+    border: 1px solid var(--grey);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.service h3 {
+    color: var(--yellow-alba)
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+    .delivery {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .service {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
