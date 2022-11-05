@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.send('API RUNNING')
 })
 
-const CONNECTION_URL = process.env.CONNECTION_URL
+const CONNECTION_URL = 'mongodb+srv://agnes:agnes123@albatech.pqmffh3.mongodb.net/?retryWrites=true&w=majority'
 
 const PORT = process.env.PORT || 5000;
 
