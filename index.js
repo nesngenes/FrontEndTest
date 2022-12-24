@@ -3,11 +3,17 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv'
-import path from 'path';
 
 import authRoutes from './routes/auth.js';
 import mypageRoutes from './routes/mypage.js';
 
+import path from 'path';
+
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 
@@ -20,9 +26,18 @@ app.use(cors());
 app.use('/albatech/auth', authRoutes);
 app.use('/albatech/mypage', mypageRoutes);
 
-app.get('/', (req, res) => {
-    res.send('API RUNNING')
-})
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '/client/build')))
+    app.get('*', (req,res) => {
+        res.sendFile(
+            path.resolve(__dirname, 'client', 'build', 'index.html')
+        )
+    })
+} else {
+    app.get('/', (req,res) => {
+        res.send('API IS RUNNING');
+    })
+}
 
 const CONNECTION_URL = 'mongodb+srv://agnes:agnes123@albatech.pqmffh3.mongodb.net/?retryWrites=true&w=majority'
 
